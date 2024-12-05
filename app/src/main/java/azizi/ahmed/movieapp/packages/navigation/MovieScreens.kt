@@ -1,4 +1,4 @@
-package azizi.ahmed.movieapp.navigation
+package azizi.ahmed.movieapp.packages.navigation
 
 enum class MovieScreens {
     HomeScreen,

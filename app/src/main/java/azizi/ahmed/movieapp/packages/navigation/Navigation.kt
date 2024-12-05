@@ -1,4 +1,4 @@
-package azizi.ahmed.movieapp.navigation
+package azizi.ahmed.movieapp.packages.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -7,8 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import azizi.ahmed.movieapp.screens.DetailsScreen
-import azizi.ahmed.movieapp.screens.HomeScreen
+import azizi.ahmed.movieapp.packages.screens.DetailsScreen
+import azizi.ahmed.movieapp.packages.screens.HomeScreen
 
 @Composable
 fun Navigation(

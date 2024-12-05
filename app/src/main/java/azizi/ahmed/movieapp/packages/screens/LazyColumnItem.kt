@@ -1,4 +1,4 @@
-package azizi.ahmed.movieapp.screens
+package azizi.ahmed.movieapp.packages.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
@@ -39,7 +39,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import azizi.ahmed.movieapp.model.Movie
+import azizi.ahmed.movieapp.packages.model.Movie
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 

@@ -1,4 +1,4 @@
-package azizi.ahmed.movieapp.screens
+package azizi.ahmed.movieapp.packages.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -27,8 +27,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import azizi.ahmed.movieapp.model.Movie
-import azizi.ahmed.movieapp.model.getMovies
+import azizi.ahmed.movieapp.packages.model.Movie
+import azizi.ahmed.movieapp.packages.model.getMovies
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 

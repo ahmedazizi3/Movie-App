@@ -1,4 +1,4 @@
-package azizi.ahmed.movieapp.screens
+package azizi.ahmed.movieapp.packages.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import azizi.ahmed.movieapp.model.Movie
-import azizi.ahmed.movieapp.model.getMovies
+import azizi.ahmed.movieapp.packages.model.Movie
+import azizi.ahmed.movieapp.packages.model.getMovies
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

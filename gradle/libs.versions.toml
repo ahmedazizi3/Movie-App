@@ -1,6 +1,7 @@
 [versions]
 agp = "8.7.1"
 coilCompose = "3.0.3"
+coreSplashscreen = "1.0.1"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -13,6 +14,7 @@ navigationCompose = "2.8.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilCompose" }
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilCompose" }

@@ -1,4 +1,4 @@
-package azizi.ahmed.movieapp.model
+package azizi.ahmed.movieapp.packages.model
 
 data class Movie(
     val id: String,
