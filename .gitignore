@@ -1,15 +1,37 @@
+# Gradle and build output
+.gradle/
+build/
+**/build/
+
+# Android Studio and IntelliJ local state
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Local machine configuration
 local.properties
+
+# Signing keys and credentials
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.der
+
+# Generated Android artifacts
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+*.aar
+app/release/
+
+# Kotlin and tooling caches
+.kotlin/
+
+# OS files
+.DS_Store
+Thumbs.db
