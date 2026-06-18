@@ -1,38 +1,62 @@
 # MovieApp
 
-MovieApp is a simple Android movie catalog built with Kotlin and Jetpack Compose. It shows a list of movies, lets the user expand each row to see extra metadata, and opens a detail screen with a horizontal gallery for the selected movie.
+MovieApp is a simple Android movie catalog built with Kotlin and Jetpack Compose. It lets users browse movies, view poster images, expand movie cards for quick details, and open a dedicated detail screen with an image gallery.
+
+## About
+
+MovieApp is designed as a lightweight movie browsing experience. Instead of showing only a plain list of titles, it gives users a visual catalog with posters, ratings, plot summaries, directors, actors, and gallery images.
+
+The app demonstrates a complete Compose UI architecture including navigation, image loading, and custom theming — built entirely with Kotlin.
+
+## Problem It Solves
+
+MovieApp makes movie browsing more visual and interactive by combining poster-based discovery, expandable movie cards, detailed movie information, and image galleries in one clean mobile interface.
+
+Users can quickly scan movies, open more information only when they need it, and explore each movie through a focused detail screen.
 
 ## Demo
 
-Watch a short demo of the app on YouTube: [MovieApp Demo](https://youtube.com/shorts/7jIiA26zPzU?feature=share)
+[![Watch Demo](https://img.youtube.com/vi/7jIiA26zPzU/0.jpg)](https://youtube.com/shorts/7jIiA26zPzU)
+
+## Screenshots
+
+| Home Screen | Expanded Details | Movie Detail |
+|---|---|---|
+| <img width="220" src="https://github.com/user-attachments/assets/ff0792dc-8296-4cd9-9d57-c1ee563d0690" alt="MovieApp screenshot 1" /> | <img width="220" src="https://github.com/user-attachments/assets/3de5ab18-438e-45ff-94de-40dcd009745a" alt="MovieApp screenshot 2" /> | <img width="220" src="https://github.com/user-attachments/assets/2112d234-2a20-44fa-8a50-684c7ba9e41b" alt="MovieApp screenshot 3" /> |
+
+| Gallery View | Movie Info | App Preview |
+|---|---|---|
+| <img width="220" src="https://github.com/user-attachments/assets/7a782ff6-44a5-49d7-bbbf-8e33a047bbaa" alt="MovieApp screenshot 4" /> | <img width="220" src="https://github.com/user-attachments/assets/3191d2ad-0488-47c6-97c2-938ea59283fb" alt="MovieApp screenshot 5" /> | <img width="220" src="https://github.com/user-attachments/assets/4f082c5d-56de-4806-99dd-1d801851953f" alt="MovieApp screenshot 6" /> |
 
 ## Features
 
-- Home screen with a scrollable movie list.
-- Expandable movie cards that show plot, director, actors, and rating.
-- Detail screen navigation for each movie.
-- Remote poster and gallery image loading with Coil.
-- Material 3 UI with a small Compose theme setup.
-- Custom MovieApp launcher logo.
-- Native splash screen.
-- Optimized debug and release APK builds.
-- Static sample movie data stored in Kotlin.
+- Home screen with a scrollable movie list
+- Expandable movie cards that show plot, director, actors, and rating
+- Detail screen navigation for each movie
+- Remote poster and gallery image loading with Coil
+- Material 3 UI with a small Compose theme setup
+- Custom MovieApp launcher logo
+- Native splash screen
+- Optimized debug and release APK builds
+- Curated built-in movie dataset with rich metadata
 
 ## Tech Stack
 
-- Kotlin
-- Jetpack Compose
-- Material 3
-- Navigation Compose
-- Coil 3
-- AndroidX SplashScreen
-- Gradle Kotlin DSL
+| Technology | Purpose |
+|---|---|
+| Kotlin | Primary language |
+| Jetpack Compose | UI framework |
+| Material 3 | Design system |
+| Navigation Compose | Screen navigation |
+| Coil 3 | Image loading |
+| AndroidX SplashScreen | Native splash screen |
+| Gradle Kotlin DSL | Build configuration |
 
 ## Release
 
 The first stable release is `v1.0.0`.
 
-Download `MovieApp.apk` from the GitHub release assets to install the app on an Android device.
+[📱 Download APK (v1.0.0)](https://github.com/ahmedazizi3/Movie-App/releases/tag/v1.0.0)
 
 ## Project Structure
 
@@ -55,35 +79,3 @@ MovieApp/
 ├── gradle/libs.versions.toml
 ├── build.gradle.kts
 └── settings.gradle.kts
-```
-
-## Requirements
-
-- Android Studio
-- JDK 11 or newer
-- Android SDK with compile SDK 34 installed
-
-## Run The App
-
-1. Open the project in Android Studio.
-2. Let Gradle sync the project.
-3. Select an emulator or Android device.
-4. Run the `app` configuration.
-
-From a terminal, you can also build the debug APK:
-
-```powershell
-.\gradlew.bat assembleDebug
-```
-
-To build both debug and release APKs:
-
-```powershell
-.\gradlew.bat assembleDebug assembleRelease
-```
-
-## Notes
-
-- The app currently uses local sample data from `Movie.kt`; it does not call a movie API.
-- Internet permission is enabled because movie posters and gallery images are loaded from remote URLs.
-- Signing files such as `.jks` keystores, local Gradle properties, IDE state, and generated APK/release files are intentionally ignored by Git.
