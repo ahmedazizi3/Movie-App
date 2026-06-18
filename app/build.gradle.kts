@@ -16,11 +16,23 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        resourceConfigurations += listOf("en")
     }
 
     buildTypes {
+        debug {
+            isDebuggable = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            isCrunchPngs = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -37,6 +49,18 @@ android {
     buildFeatures {
         compose = true
     }
+    packaging {
+        resources {
+            excludes += setOf(
+                "META-INF/AL2.0",
+                "META-INF/LGPL2.1",
+                "META-INF/LICENSE*",
+                "META-INF/NOTICE*",
+                "META-INF/**/LICENSE*",
+                "META-INF/**/NOTICE*"
+            )
+        }
+    }
 }
 
 dependencies {
@@ -46,8 +70,6 @@ dependencies {
     implementation(libs.coil.network.okhttp)
 
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)

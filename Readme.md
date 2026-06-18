@@ -2,6 +2,10 @@
 
 MovieApp is a simple Android movie catalog built with Kotlin and Jetpack Compose. It shows a list of movies, lets the user expand each row to see extra metadata, and opens a detail screen with a horizontal gallery for the selected movie.
 
+## Demo
+
+Watch a short demo of the app on YouTube: [MovieApp Demo](https://youtube.com/shorts/7jIiA26zPzU?feature=share)
+
 ## Features
 
 - Home screen with a scrollable movie list.
@@ -9,6 +13,9 @@ MovieApp is a simple Android movie catalog built with Kotlin and Jetpack Compose
 - Detail screen navigation for each movie.
 - Remote poster and gallery image loading with Coil.
 - Material 3 UI with a small Compose theme setup.
+- Custom MovieApp launcher logo.
+- Native splash screen.
+- Optimized debug and release APK builds.
 - Static sample movie data stored in Kotlin.
 
 ## Tech Stack
@@ -18,7 +25,14 @@ MovieApp is a simple Android movie catalog built with Kotlin and Jetpack Compose
 - Material 3
 - Navigation Compose
 - Coil 3
+- AndroidX SplashScreen
 - Gradle Kotlin DSL
+
+## Release
+
+The first stable release is `v1.0.0`.
+
+Download `MovieApp.apk` from the GitHub release assets to install the app on an Android device.
 
 ## Project Structure
 
@@ -60,6 +74,12 @@ From a terminal, you can also build the debug APK:
 
 ```powershell
 .\gradlew.bat assembleDebug
+```
+
+To build both debug and release APKs:
+
+```powershell
+.\gradlew.bat assembleDebug assembleRelease
 ```
 
 ## Notes
